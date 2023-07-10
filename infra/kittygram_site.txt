@@ -1,0 +1,5 @@
+IP: 130.193.43.158;
+name_taski: https://everydaytaski.hopto.org;
+name_kittygram: https://kittyworld.hopto.org;
+login: Admin;
+password: Adminadmin; 
