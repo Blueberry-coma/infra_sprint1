@@ -23,7 +23,9 @@ python-dotenv==1.0.0
 ```
 
 # Авторы:
+```
 backend: yandex-practicum
 frontend: yandex-practicum
 DevOps: Александр Овчинников
+```
 
