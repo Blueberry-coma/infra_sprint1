@@ -18,24 +18,24 @@ server {
     }
 
 
-    listen 443 ssl; # managed by Certbot
-    ssl_certificate /etc/letsencrypt/live/everydaytaski.hopto.org/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/everydaytaski.hopto.org/privkey.pem; # managed by Certbot
-    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
-    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+    listen 443 ssl; 
+    ssl_certificate /etc/letsencrypt/live/everydaytaski.hopto.org/fullchain.pem; 
+    ssl_certificate_key /etc/letsencrypt/live/everydaytaski.hopto.org/privkey.pem; 
+    include /etc/letsencrypt/options-ssl-nginx.conf; 
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; 
 
 }
 
 server {
     if ($host = everydaytaski.hopto.org) {
         return 301 https://$host$request_uri;
-    } # managed by Certbot
+    
 
 
 
     listen 80;
     server_name 130.193.43.158 everydaytaski.hopto.org;
-    return 404; # managed by Certbot
+    return 404; 
 
 
 }
@@ -66,24 +66,24 @@ server {
 
 
 
-    listen 443 ssl; # managed by Certbot
-    ssl_certificate /etc/letsencrypt/live/kittyworld.hopto.org/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/kittyworld.hopto.org/privkey.pem; # managed by Certbot
-    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
-    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+    listen 443 ssl; 
+    ssl_certificate /etc/letsencrypt/live/kittyworld.hopto.org/fullchain.pem; 
+    ssl_certificate_key /etc/letsencrypt/live/kittyworld.hopto.org/privkey.pem; 
+    include /etc/letsencrypt/options-ssl-nginx.conf; 
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; 
 
 }
 
 server {
     if ($host = kittyworld.hopto.org) {
         return 301 https://$host$request_uri;
-    } # managed by Certbot
+    } 
 
 
 
     listen 80;
     server_name 130.193.43.158 kittyworld.hopto.org;
-    return 404; # managed by Certbot
+    return 404; 
 
 
 }
